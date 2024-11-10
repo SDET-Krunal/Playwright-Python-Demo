@@ -8,8 +8,7 @@ class BasePage(object):
 
     def __init__(self, page):
         self.page = page
-        self.url = EnvironmentConfig.APP_URL + 'v1/'
-        self.base_url = self.url
+        self.base_url = EnvironmentConfig.APP_URL
 
     def open_app_url(self) -> None:
         """

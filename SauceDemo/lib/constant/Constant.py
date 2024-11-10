@@ -8,5 +8,7 @@ class Constant:
         ABOUT = "About"
         LOGOUT = "Logout"
         RESET_APP_STATE = "Reset App State"
-        LOGIN_ERROR_MSG = "Epic sadface: Sorry, this user has been locked out."
+
+    class HeaderConstant:
+        """ Header related constants """
         PRODUCTS = "Products"

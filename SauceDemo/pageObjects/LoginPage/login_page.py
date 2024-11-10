@@ -8,7 +8,7 @@ class LoginPage(BasePage):
         super().__init__(page)
         self.user_name = page.locator("//input[@id='user-name']")
         self.password = page.locator("//input[@id='password']")
-        self.login_btn = page.locator("//input[@id='login-button")
+        self.login_btn = page.locator("//input[@id='login-button']")
 
     def enter_user_name(self, text):
         """
@@ -34,7 +34,7 @@ class LoginPage(BasePage):
 
         :return: None
         """
-        self.login_btn.press()
+        self.login_btn.click()
 
     def do_login(self, user_name: str, password: str):
         """

@@ -9,8 +9,8 @@ class SideNavigationPage(BasePage):
         super().__init__(page)
         self.all_item_link = page.locator("//a[@id='inventory_sidebar_link']")
         self.about_link = page.locator("//a[@id='about_sidebar_link']")
-        self.logout_link = page.locator("//a[@id='logout_sidebar_link")
-        self.reset_app_state_link = page.locator("//a[@id='reset_sidebar_link")
+        self.logout_link = page.locator("//a[@id='logout_sidebar_link']")
+        self.reset_app_state_link = page.locator("//a[@id='reset_sidebar_link']")
 
     def click_on_side_navigation_menu(self, menu_name: str):
         """
@@ -21,7 +21,7 @@ class SideNavigationPage(BasePage):
         """
         side_nav_menu_locators = {"All Item": self.all_item_link, "About": self.about_link, "Logout": self.logout_link,
                                   "Reset App State": self.reset_app_state_link}
-        side_nav_menu_locators[menu_name].press()
+        side_nav_menu_locators[menu_name].click()
 
     def do_logout(self):
         """
